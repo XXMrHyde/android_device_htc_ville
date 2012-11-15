@@ -86,6 +86,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Torch
 
+# Theme
+PRODUCT_PACKAGES += \
+    AlphaBlueModV1
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
@@ -95,7 +99,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enable_bypass=1 \
     dalvik.vm.lockprof.threshold=500 \
     ro.com.google.locationfeatures=1 \
-    dalvik.vm.dexopt-flags=m=y
+    dalvik.vm.dexopt-flags=m=y \
+    ro.xxmrhyde.version=Dark-Jelly-S-Edition \
+    updateme.name=Dark-Jelly-S-Edition \
+    updateme.version=0.0.0 \
+    updateme.urlcheck=http://add.url.to.update_me_ckeck.xml \
+    updateme.reboottype=2 \
+    updateme.disableinstalledapps=1 \
+    updateme.disablescripts=1
 
 # We have enough space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
