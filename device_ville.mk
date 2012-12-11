@@ -86,6 +86,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Torch
 
+# Copy over the Dark Jelly Edition changelog to the device
+PRODUCT_COPY_FILES += \
+    device/htc/ville/CHANGELOG-DJE.txt:system/etc/CHANGELOG-DJE.txt
+
 # Theme
 PRODUCT_PACKAGES += \
     AlphaBlueModV1
