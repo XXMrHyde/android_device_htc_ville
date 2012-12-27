@@ -86,17 +86,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Torch
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
+# Dark Jelly S Edition additions
+
 # Copy over the Dark Jelly Edition changelog to the device
 PRODUCT_COPY_FILES += \
     device/htc/ville/CHANGELOG-DJE.txt:system/etc/CHANGELOG-DJE.txt
 
-# Theme
-PRODUCT_PACKAGES += \
-    AlphaBlueModV1
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+# Dark Jelly S Edition Property Overrides
 
 # Extra properties
 PRODUCT_PROPERTY_OVERRIDES += \
