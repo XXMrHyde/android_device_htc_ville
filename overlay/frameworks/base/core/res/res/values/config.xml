@@ -150,7 +150,4 @@
          It is recommended that this value be no more than 250 ms.
          This feature should be disabled for most devices. -->
     <integer name="config_virtualKeyQuietTimeMillis">250</integer>
-
-    <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
-    <bool name="config_unplugTurnsOnScreen">true</bool>
 </resources>
