@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Home button Wake Support. Some devices do not support this.
+         Setting to false will disable Home button Wake support -->
+    <bool name="config_show_homeWake">true</bool>
+
+    <!-- Plugged unplugged Wake Support. Some devices do not support this.
+         Setting to false will disable Home button Wake support -->
+    <bool name="config_show_PluggedUnpluggedWake">true</bool>
+
+</resources>
