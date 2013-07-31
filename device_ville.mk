@@ -84,6 +84,23 @@ PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_LOCALES += en_US hdpi
 
+# Dark Jelly S Edition additions
+
+# Copy over the Dark Jelly S Edition changelog to the device
+PRODUCT_COPY_FILES += \
+    device/htc/ville/CHANGELOG-DJE.txt:system/etc/CHANGELOG-DJE.txt
+
+# Dark Jelly S Edition Property Overrides
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.xxmrhyde.version=Dark-Jelly-S-Edition-(Build-0) \
+    updateme.name=Dark-Jelly-S-Edition \
+    updateme.version=0.0.0 \
+    updateme.urlcheck=http://<-add-url-here-> \
+    updateme.reboottype=2 \
+    updateme.disableinstalledapps=1 \
+    updateme.disablescripts=1
+
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/ville/ville-vendor.mk)
 
