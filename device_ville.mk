@@ -93,7 +93,7 @@ PRODUCT_COPY_FILES += \
 # Dark Jelly S Edition Property Overrides
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.xxmrhyde.version=Dark-Jelly-S-Edition-(Build-0) \
+	ro.dj.version=Dark-Jelly-S-Edition-(Build-0) \
     updateme.name=Dark-Jelly-S-Edition \
     updateme.version=0.0.0 \
     updateme.urlcheck=http://<-add-url-here-> \
